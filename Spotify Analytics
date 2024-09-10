@@ -57,7 +57,8 @@ FROM Spotifydata
 ORDER BY energy LIMIT 1;
 
 
---5. Calculate the average popularity for the artists in the Spotify data table. Then, for every artist with an average popularity of 90 or above, show their name, their average popularity, and label them as a “Top Star”
+--5. Calculate the average popularity for the artists in the Spotify data table. 
+-- Then, for every artist with an average popularity of 90 or above, show their name, their average popularity, and label them as a “Top Star”
 CREATE VIEW vwPopularityAverage AS
 SELECT artist_name, AVG(popularity) AS ave_popularity
 FROM Spotifydata
